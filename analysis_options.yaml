@@ -1,0 +1,49 @@
+include:
+  - package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-raw-types: true
+    strict-casts: true
+  errors:
+    avoid_print: warning
+    prefer_const_constructors: warning
+    use_build_context_synchronously: warning
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+linter:
+  rules:
+    # === 🚀 Performance & Rebuild Optimization ===
+    prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
+    prefer_const_literals_to_create_immutables: true
+    avoid_unnecessary_containers: true
+    sized_box_for_whitespace: true
+    # === ✨ Code Style & Cleanliness ===
+    require_trailing_commas: false
+    sort_child_properties_last: true
+    cascade_invocations: true
+    unnecessary_parenthesis: true
+    sort_pub_dependencies: true
+    # === 🛡️ Immutability & Stateless Focus ===
+    prefer_final_fields: true
+    prefer_final_locals: true
+    prefer_final_in_for_each: true
+    # === 🎯 Modern Dart & Best Practices ===
+    use_key_in_widget_constructors: true
+    use_super_parameters: true
+    always_use_package_imports: true
+    avoid_void_async: true
+    depend_on_referenced_packages: true
+
+bloc:
+  rules:
+    avoid_flutter_imports: error
+    avoid_public_bloc_methods: error
+    avoid_public_fields: error
+    prefer_bloc: true
+    prefer_file_naming_conventions: true
+    prefer_build_context_extensions: true
+    prefer_const_constructors: true

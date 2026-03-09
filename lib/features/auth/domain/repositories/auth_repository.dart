@@ -1,0 +1,14 @@
+import 'package:to_do_app/features/auth/domain/entities/auth_session.dart';
+
+abstract class AuthRepository {
+  Future<AuthSession?> restoreSession();
+  Future<AuthSession> signIn({
+    required String email,
+    required String password,
+  });
+  Future<AuthSession> signUp({
+    required String email,
+    required String password,
+  });
+  Future<void> signOut();
+}

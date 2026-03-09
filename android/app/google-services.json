@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "921866173610",
+    "project_id": "bookzila-3147b",
+    "storage_bucket": "bookzila-3147b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921866173610:android:e6b9088a8de123933664d3",
+        "android_client_info": {
+          "package_name": "com.to_do.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm3_iGwHRMIaFMj4H_aW5Zj2xX9UNR4uw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
