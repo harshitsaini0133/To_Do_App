@@ -2,12 +2,12 @@ class AppConfig {
   const AppConfig._();
 
   static const String firebaseApiKey = String.fromEnvironment(
-    'AIzaSyBm3_iGwHRMIaFMj4H_aW5Zj2xX9UNR4uw',
+    'FIREBASE_API_KEY',
     defaultValue: 'AIzaSyBm3_iGwHRMIaFMj4H_aW5Zj2xX9UNR4uw',
   );
 
   static const String firebaseDatabaseUrl = String.fromEnvironment(
-    'https://bookzila-3147b-default-rtdb.firebaseio.com',
+    'FIREBASE_DATABASE_URL',
     defaultValue: 'https://bookzila-3147b-default-rtdb.firebaseio.com',
   );
   static bool get isFirebaseConfigured =>
