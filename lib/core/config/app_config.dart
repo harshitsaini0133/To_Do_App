@@ -1,15 +1,14 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 class AppConfig {
   const AppConfig._();
 
-  static const String firebaseApiKey = String.fromEnvironment(
-    'FIREBASE_API_KEY',
-    defaultValue: 'AIzaSyBm3_iGwHRMIaFMj4H_aW5Zj2xX9UNR4uw',
-  );
+  static String get firebaseApiKey =>
+      dotenv.get('FIREBASE_API_KEY', fallback: '');
 
-  static const String firebaseDatabaseUrl = String.fromEnvironment(
-    'FIREBASE_DATABASE_URL',
-    defaultValue: 'https://bookzila-3147b-default-rtdb.firebaseio.com',
-  );
+  static String get firebaseDatabaseUrl =>
+      dotenv.get('FIREBASE_DATABASE_URL', fallback: '');
+
   static bool get isFirebaseConfigured =>
       firebaseApiKey.isNotEmpty && firebaseDatabaseUrl.isNotEmpty;
 

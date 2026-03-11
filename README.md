@@ -102,13 +102,13 @@ flutter run \
   --dart-define=FIREBASE_DATABASE_URL=https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com
 ```
 
-Example with the current project values:
+Example:
 
 ```bash
-flutter run \
-  --dart-define=FIREBASE_API_KEY=AIzaSyBm3_iGwHRMIaFMj4H_aW5Zj2xX9UNR4uw \
-  --dart-define=FIREBASE_DATABASE_URL=https://bookzila-3147b-default-rtdb.firebaseio.com
+flutter run
 ```
+
+The app will read values from your `.env` file. See the **Environment Setup** section below.
 
 ## Where Configuration Is Read
 
